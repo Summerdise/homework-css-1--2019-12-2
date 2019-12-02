@@ -28,9 +28,12 @@
 .content{
     border-radius: 4px;
     background-color:#f65040;
-    /* display: none; */
+    display: none;
     font-size: 25px;
     text-decoration: none;
+}
+.total:hover .content{
+    display: block;
 }
 ul{
     padding: 0;
@@ -69,8 +72,20 @@ li{
     height:50px;
     margin-left:5px;
 }
-span{
+.content a{
     margin-left:8px;
     margin-top:8px;
     position: absolute;
+}
+.content a:hover{
+    cursor: pointer;
+    color: yellow;
+}
+.up-button{
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #f65040;
+    left:228px;
+    top:70px;
 }
